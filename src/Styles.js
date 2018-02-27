@@ -8,11 +8,18 @@ export default {
 		borderRadius: 5,
 		padding: 10,
 		height: 150,
+		flex:1,
 		backgroundColor: '#bdc3c7'
+	},
+	eachItem: {
+		flex:2,
+		justifyContent: 'center',
+		alignItems: 'center',
 	},
 	itemName: {
 		fontSize: 16,
 		color: '#000000',
+		textAlign: 'center'
 	},
 	textInput: {
 		padding: 20,
@@ -35,7 +42,6 @@ export default {
 		fontSize: 30,
 		backgroundColor: '#675434',
 		textAlign: 'center',
-		margin: 20,
 	},
 	textResult: {
 		fontSize: 20,
@@ -44,10 +50,10 @@ export default {
 		margin: 20,
 	},
 	image: {
-		flex: 0.5,
 		width: 10,
 		height: 10,
-		alignItems: 'flex-end',
-		justifyContent: 'flex-end'
+		justifyContent:'flex-end',
+		alignItems:'flex-end',
+		alignSelf:'flex-end'
 	}
 }

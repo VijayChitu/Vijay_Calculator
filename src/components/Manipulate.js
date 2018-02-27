@@ -60,7 +60,14 @@ export default class Manipulate extends React.Component {
 					break;
 			case 'Square Root': this.setState({ result :  "Result = " + Math.sqrt(parseInt(valueA)) });
 					break;
-			case 'Composite': this.setState({ result: "Result = " + eval(valueA) });
+			case 'Composite': try
+								{
+										this.setState({ result: 												"Result = " + eval(valueA) 										});
+								}
+								catch(e)
+								{
+									alert('Invalid Expression');
+								}		
 					break;
 			default: break;
 		}

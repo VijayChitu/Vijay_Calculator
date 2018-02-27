@@ -36,7 +36,7 @@ export default class Home extends React.Component {
 		return(
 			<TouchableOpacity onPress={ () => this.renderNavigation(item)}>
 				<View style={Styles.itemContainer}>
-					<View>
+					<View style={Styles.eachItem}>
 						<Text style={Styles.itemName}>{item}</Text>
 					</View>
 
